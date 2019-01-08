@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MegaProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmH-mV-AhF">
+                                <rect key="frame" x="154" y="115" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Creativity"/>
+                                <connections>
+                                    <segue destination="eWy-0Y-Hxj" kind="show" id="onk-ho-ynB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8d-ZJ-ak0">
+                                <rect key="frame" x="154" y="195" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Algorithm"/>
+                                <connections>
+                                    <segue destination="2RO-e4-YpI" kind="show" id="ST5-JG-RR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwo-3R-bA8">
+                                <rect key="frame" x="147" y="276" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abstraction"/>
+                                <connections>
+                                    <segue destination="XZD-tK-g9l" kind="show" id="Czk-mr-zwA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-hP-2cg">
+                                <rect key="frame" x="171" y="354" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Data"/>
+                                <connections>
+                                    <segue destination="aFG-R0-od6" kind="show" id="odq-4y-8dw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3420" y="369"/>
+        </scene>
+        <!--Creativity View Controller-->
+        <scene sceneID="D1h-pP-6sx">
+            <objects>
+                <viewController id="eWy-0Y-Hxj" customClass="CreativityViewController" customModule="CreativityProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsb-dn-yEf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NW0-YZ-LYC" customClass="DrawingView" customModule="CreativityProject" customModuleProvider="target">
+                                <rect key="frame" x="67" y="52" width="240" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.064754466560000001" green="0.62734779789999995" blue="0.2221141411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-QZ-g4s">
+                                <rect key="frame" x="130" y="590" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Creativity button"/>
+                                <connections>
+                                    <segue destination="I2g-dB-6nn" kind="show" id="ePX-CJ-7AH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ytk-AU-N2F"/>
+                    </view>
+                    <connections>
+                        <outlet property="CreativityButton" destination="J4R-QZ-g4s" id="ehI-KI-xfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yem-im-P0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2244" y="-1048"/>
+        </scene>
+        <!--Creativity Collection View Controller-->
+        <scene sceneID="iKs-Y5-g3i">
+            <objects>
+                <collectionViewController id="I2g-dB-6nn" customClass="CreativityCollectionViewController" customModule="CreativityProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ylu-hW-dZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.61925699059999995" green="1" blue="0.012798864849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lCA-6e-Yum">
+                            <size key="itemSize" width="200" height="250"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="ioA-It-May" customClass="CreativityCell" customModule="CreativityProject" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-nB-O8e" userLabel="Art Image">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-x0-IFO" userLabel="Art Label">
+                                            <rect key="frame" x="20" y="209" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.75230731870000001" green="0.1963643263" blue="0.68067863149999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="creativityImage" destination="Iqa-nB-O8e" id="yji-Nq-9o2"/>
+                                    <outlet property="creativityLabel" destination="8KW-x0-IFO" id="Z0V-o4-vlA"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="I2g-dB-6nn" id="832-Qc-TJc"/>
+                            <outlet property="delegate" destination="I2g-dB-6nn" id="6Vn-ve-6pq"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blW-MU-AOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1191" y="-1048"/>
+        </scene>
+        <!--Algorithm Controller-->
+        <scene sceneID="1kt-f0-vzv">
+            <objects>
+                <viewController id="2RO-e4-YpI" customClass="AlgorithmController" customModule="JoshAlgorithmApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oev-kh-3Fj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftSample" translatesAutoresizingMaskIntoConstraints="NO" id="bES-6W-Ssl">
+                                <rect key="frame" x="43" y="412" width="289" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="MNO-Dr-C3W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-N7-Gkw">
+                                <rect key="frame" x="43" y="37" width="289" height="336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="ORD-cT-uIt"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="10" name=".SFNSText"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ymr-N7-Gkw" firstAttribute="trailing" secondItem="bES-6W-Ssl" secondAttribute="trailing" id="DC2-HK-Hmf"/>
+                            <constraint firstItem="Ymr-N7-Gkw" firstAttribute="centerX" secondItem="Oev-kh-3Fj" secondAttribute="centerX" id="SpG-J3-xXA"/>
+                            <constraint firstItem="Ymr-N7-Gkw" firstAttribute="leading" secondItem="2Zu-ZD-MIx" secondAttribute="leading" constant="43" id="Zyh-iA-4G3"/>
+                            <constraint firstItem="Ymr-N7-Gkw" firstAttribute="top" secondItem="2Zu-ZD-MIx" secondAttribute="top" constant="44" id="hny-ds-0aB"/>
+                            <constraint firstItem="2Zu-ZD-MIx" firstAttribute="bottom" secondItem="bES-6W-Ssl" secondAttribute="bottom" constant="40" id="rE5-If-7fs"/>
+                            <constraint firstItem="Ymr-N7-Gkw" firstAttribute="leading" secondItem="bES-6W-Ssl" secondAttribute="leading" id="yPB-av-kmS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Zu-ZD-MIx"/>
+                    </view>
+                    <connections>
+                        <outlet property="algorithmText" destination="Ymr-N7-Gkw" id="952-eF-jcy"/>
+                        <outlet property="swiftImage" destination="bES-6W-Ssl" id="T8X-Zw-yjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0t-9a-Wh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2244" y="-257"/>
+        </scene>
+        <!--Swift Code-->
+        <scene sceneID="DAR-io-tgz">
+            <objects>
+                <viewController storyboardIdentifier="SwiftViewController" title="Swift Code" id="33P-yJ-vnV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S1t-Bs-k0h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nn7-zC-aga">
+                                <rect key="frame" x="34" y="46" width="306" height="318"/>
+                                <color key="backgroundColor" red="0.7810448646" green="0.93693329020000005" blue="0.84901167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">This swift code is more abstract than Binary because it uses words that we understand so we are able to comprehend it. It is less Abstract than Block Code because it isn’t a simple drag and dropping of code blocks.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Swift" translatesAutoresizingMaskIntoConstraints="NO" id="KCj-bq-RUS">
+                                <rect key="frame" x="34" y="423" width="306" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="h9t-27-0tx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42211130209999997" green="0.8253724093" blue="0.2750425567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nn7-zC-aga" firstAttribute="centerX" secondItem="S1t-Bs-k0h" secondAttribute="centerX" id="4eS-5a-ZKX"/>
+                            <constraint firstItem="Nn7-zC-aga" firstAttribute="trailing" secondItem="KCj-bq-RUS" secondAttribute="trailing" id="IZt-Rm-wr7"/>
+                            <constraint firstItem="KCj-bq-RUS" firstAttribute="top" secondItem="Nn7-zC-aga" secondAttribute="bottom" constant="59" id="Q2b-MA-Frf"/>
+                            <constraint firstItem="Nn7-zC-aga" firstAttribute="leading" secondItem="KCj-bq-RUS" secondAttribute="leading" id="Zit-SV-zEV"/>
+                            <constraint firstItem="Nn7-zC-aga" firstAttribute="leading" secondItem="mpQ-L0-FGP" secondAttribute="leading" constant="34" id="bKa-Ii-sNF"/>
+                            <constraint firstItem="Nn7-zC-aga" firstAttribute="top" secondItem="mpQ-L0-FGP" secondAttribute="top" constant="26" id="cMf-sZ-eKy"/>
+                            <constraint firstItem="mpQ-L0-FGP" firstAttribute="bottom" secondItem="KCj-bq-RUS" secondAttribute="bottom" constant="73" id="cuF-hm-mAS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mpQ-L0-FGP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnH-c9-gkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1191" y="451"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="9qE-DA-A2c">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Faj-A9-53R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XZD-tK-g9l" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="-1191" y="-258"/>
+        </scene>
+        <!--Block Code-->
+        <scene sceneID="K0g-nP-axi">
+            <objects>
+                <viewController storyboardIdentifier="BlockViewContoller" title="Block Code" id="dLS-04-1bd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Cu-XU-egz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXk-5x-Tbf">
+                                <rect key="frame" x="34" y="42" width="306" height="318"/>
+                                <color key="backgroundColor" red="0.7810448646" green="0.93693329020000005" blue="0.84901167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">This block code is more abstract than swift code because all you have to do is be able to drag and drop some code blocks. It is less abstract than Logical Gate code because it isn’t a physical device.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BlockCode" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-BW-Lur">
+                                <rect key="frame" x="34" y="420" width="306" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="LTY-Ey-w3y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32701878350000002" green="0.765367927" blue="0.95033193010000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IXk-5x-Tbf" firstAttribute="leading" secondItem="M9h-BW-Lur" secondAttribute="leading" id="17r-dh-Xrj"/>
+                            <constraint firstItem="IXk-5x-Tbf" firstAttribute="leading" secondItem="YtB-CE-93A" secondAttribute="leading" constant="34" id="5Kp-4S-uwd"/>
+                            <constraint firstItem="YtB-CE-93A" firstAttribute="bottom" secondItem="M9h-BW-Lur" secondAttribute="bottom" constant="76" id="AS1-rL-sxb"/>
+                            <constraint firstItem="M9h-BW-Lur" firstAttribute="top" secondItem="IXk-5x-Tbf" secondAttribute="bottom" constant="60" id="Cgz-9M-uQW"/>
+                            <constraint firstItem="IXk-5x-Tbf" firstAttribute="centerX" secondItem="3Cu-XU-egz" secondAttribute="centerX" id="M9R-ZD-xGZ"/>
+                            <constraint firstItem="IXk-5x-Tbf" firstAttribute="top" secondItem="YtB-CE-93A" secondAttribute="top" constant="22" id="gsb-Ak-kow"/>
+                            <constraint firstItem="IXk-5x-Tbf" firstAttribute="trailing" secondItem="M9h-BW-Lur" secondAttribute="trailing" id="tdh-Tm-Knz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YtB-CE-93A"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnV-x0-052" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-505" y="455"/>
+        </scene>
+        <!--Byte Code-->
+        <scene sceneID="0ts-a8-hOz">
+            <objects>
+                <viewController storyboardIdentifier="ByteCodeViewController" title="Byte Code" id="jtk-me-O7Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lME-Le-Bl1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KM-11-49x">
+                                <rect key="frame" x="34" y="43" width="306" height="318"/>
+                                <color key="backgroundColor" red="0.7810448646" green="0.93693329020000005" blue="0.84901167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">This Object and Byte code is more abstract than Swift code because it uses mainly a format of numbers and letters. It is less abstract than Binary because it doesn’t just use ones and zeros.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ByteCode" translatesAutoresizingMaskIntoConstraints="NO" id="6UG-YY-Wkb">
+                                <rect key="frame" x="34" y="418" width="306" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="ay8-qs-MVO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89894349090000003" green="0.104171931" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9KM-11-49x" firstAttribute="leading" secondItem="6UG-YY-Wkb" secondAttribute="leading" id="5zc-44-MbW"/>
+                            <constraint firstItem="9KM-11-49x" firstAttribute="trailing" secondItem="6UG-YY-Wkb" secondAttribute="trailing" id="Z2O-89-hCn"/>
+                            <constraint firstItem="9KM-11-49x" firstAttribute="leading" secondItem="hRm-Xg-9Ym" secondAttribute="leading" constant="34" id="jfF-rQ-NMC"/>
+                            <constraint firstItem="9KM-11-49x" firstAttribute="top" secondItem="hRm-Xg-9Ym" secondAttribute="top" constant="23" id="p4q-Kn-uTj"/>
+                            <constraint firstItem="9KM-11-49x" firstAttribute="centerX" secondItem="lME-Le-Bl1" secondAttribute="centerX" id="qly-Lm-pIY"/>
+                            <constraint firstItem="hRm-Xg-9Ym" firstAttribute="bottom" secondItem="6UG-YY-Wkb" secondAttribute="bottom" constant="78" id="uxl-zp-GZS"/>
+                            <constraint firstItem="6UG-YY-Wkb" firstAttribute="top" secondItem="9KM-11-49x" secondAttribute="bottom" constant="57" id="xB9-5T-zTj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hRm-Xg-9Ym"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGW-hA-jJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="455"/>
+        </scene>
+        <!--Binary Code-->
+        <scene sceneID="Uhx-9b-y0x">
+            <objects>
+                <viewController storyboardIdentifier="BinaryViewController" title="Binary Code" id="m46-I6-d6p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHC-hs-tje">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-zY-8fN">
+                                <rect key="frame" x="34" y="43" width="306" height="318"/>
+                                <color key="backgroundColor" red="0.7810448646" green="0.93693329020000005" blue="0.84901167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">This binary code is more abstract than Object and Byte code because it only uses ones and zeros. It is less abstract than logical gate code because it uses a physical device to connect things.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BinaryCode" translatesAutoresizingMaskIntoConstraints="NO" id="uh2-Zs-vCK">
+                                <rect key="frame" x="34" y="417" width="306" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="IRA-Wz-32K"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91737182090000002" green="1" blue="0.5365417951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dQL-zY-8fN" firstAttribute="leading" secondItem="axJ-ZD-osy" secondAttribute="leading" constant="34" id="6N5-Wh-fRd"/>
+                            <constraint firstItem="dQL-zY-8fN" firstAttribute="leading" secondItem="uh2-Zs-vCK" secondAttribute="leading" id="GSx-Of-ps8"/>
+                            <constraint firstItem="dQL-zY-8fN" firstAttribute="centerX" secondItem="vHC-hs-tje" secondAttribute="centerX" id="RTM-Nf-DXZ"/>
+                            <constraint firstItem="uh2-Zs-vCK" firstAttribute="top" secondItem="dQL-zY-8fN" secondAttribute="bottom" constant="56" id="V1D-Yy-zBl"/>
+                            <constraint firstItem="axJ-ZD-osy" firstAttribute="bottom" secondItem="uh2-Zs-vCK" secondAttribute="bottom" constant="79" id="aHS-bo-1xB"/>
+                            <constraint firstItem="dQL-zY-8fN" firstAttribute="top" secondItem="axJ-ZD-osy" secondAttribute="top" constant="23" id="br2-n2-9If"/>
+                            <constraint firstItem="dQL-zY-8fN" firstAttribute="trailing" secondItem="uh2-Zs-vCK" secondAttribute="trailing" id="d7d-pK-dMh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="axJ-ZD-osy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0b-TN-JzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="455"/>
+        </scene>
+        <!--Logical Gate-->
+        <scene sceneID="E3j-Zk-nZn">
+            <objects>
+                <viewController storyboardIdentifier="LogicalGateViewController" title="Logical Gate" id="5WG-Mg-Wfn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PWF-xz-fgD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4m-my-6yC">
+                                <rect key="frame" x="34" y="42" width="306" height="318"/>
+                                <color key="backgroundColor" red="0.7810448646" green="0.93693329020000005" blue="0.84901167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">This logical gate is more abstract than Block Code because it uses a boolean function in it. It is less abstract than Binary because it is a more complex sequence of ones and zeros.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogicalCode" translatesAutoresizingMaskIntoConstraints="NO" id="EPg-G2-6Ya">
+                                <rect key="frame" x="34" y="415" width="306" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="wSG-th-lxP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77000772559999997" green="0.46744255569999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A4m-my-6yC" firstAttribute="leading" secondItem="EPg-G2-6Ya" secondAttribute="leading" id="FJO-YG-aSf"/>
+                            <constraint firstItem="EPg-G2-6Ya" firstAttribute="top" secondItem="A4m-my-6yC" secondAttribute="bottom" constant="55" id="Gfk-0A-4fw"/>
+                            <constraint firstItem="A4m-my-6yC" firstAttribute="trailing" secondItem="EPg-G2-6Ya" secondAttribute="trailing" id="InM-xb-dNi"/>
+                            <constraint firstItem="6XW-G8-m1z" firstAttribute="bottom" secondItem="EPg-G2-6Ya" secondAttribute="bottom" constant="81" id="KnS-eA-Tpj"/>
+                            <constraint firstItem="A4m-my-6yC" firstAttribute="top" secondItem="6XW-G8-m1z" secondAttribute="top" constant="22" id="W62-tE-1Ey"/>
+                            <constraint firstItem="A4m-my-6yC" firstAttribute="leading" secondItem="6XW-G8-m1z" secondAttribute="leading" constant="34" id="Zdb-d5-RUx"/>
+                            <constraint firstItem="A4m-my-6yC" firstAttribute="centerX" secondItem="PWF-xz-fgD" secondAttribute="centerX" id="wjC-ww-4pc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6XW-G8-m1z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z43-Dc-BfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="454"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="phz-RU-vuD">
+            <objects>
+                <tableViewController id="aFG-R0-od6" customClass="DataViewController" customModule="DataInfoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f9g-F7-k23">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" rowHeight="101" id="ozv-wc-pbE" customClass="BucketItemCell" customModule="DataInfoProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="101"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ozv-wc-pbE" id="kNv-M0-DhP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bucket item here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRb-g5-0qp" userLabel="Bucket Item Text">
+                                            <rect key="frame" x="95" y="9" width="153" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="rKy-e4-gmR"/>
+                                                <constraint firstAttribute="width" constant="153" id="uoL-qf-neX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqJ-hJ-9Wu" userLabel="Bucket Item Author">
+                                            <rect key="frame" x="179" y="59" width="69" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="69" id="LUK-st-nc7"/>
+                                            </constraints>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Author">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Times-Italic"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvJ-fL-Lvv" userLabel="Bucket Item Symbol">
+                                            <rect key="frame" x="16" y="31.5" width="44" height="37.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="Klu-s6-Hob"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EvJ-fL-Lvv" firstAttribute="leading" secondItem="kNv-M0-DhP" secondAttribute="leadingMargin" id="4W5-eU-etO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EvJ-fL-Lvv" secondAttribute="bottom" constant="21" id="7ZU-24-LdC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uqJ-hJ-9Wu" secondAttribute="bottom" constant="7" id="Fke-73-OMS"/>
+                                        <constraint firstItem="uqJ-hJ-9Wu" firstAttribute="top" secondItem="bRb-g5-0qp" secondAttribute="bottom" constant="26" id="Ihm-dJ-bkk"/>
+                                        <constraint firstItem="bRb-g5-0qp" firstAttribute="trailing" secondItem="uqJ-hJ-9Wu" secondAttribute="trailing" id="fxu-I4-kln"/>
+                                        <constraint firstItem="EvJ-fL-Lvv" firstAttribute="centerY" secondItem="kNv-M0-DhP" secondAttribute="centerY" id="gEk-tW-O8C"/>
+                                        <constraint firstItem="bRb-g5-0qp" firstAttribute="leading" secondItem="kNv-M0-DhP" secondAttribute="leadingMargin" constant="79" id="iBx-xM-oRB"/>
+                                        <constraint firstItem="bRb-g5-0qp" firstAttribute="top" secondItem="kNv-M0-DhP" secondAttribute="topMargin" constant="-2" id="iRx-ve-Vl0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="uqJ-hJ-9Wu" id="YkT-o3-qaO"/>
+                                    <outlet property="bucketItemSymbol" destination="EvJ-fL-Lvv" id="JSA-rJ-sbO"/>
+                                    <outlet property="bucketItemText" destination="bRb-g5-0qp" id="gCA-ou-Dva"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aFG-R0-od6" id="6wH-Xd-Ynw"/>
+                            <outlet property="delegate" destination="aFG-R0-od6" id="O1U-V1-Z7z"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg8-ld-D2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2244" y="1037"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BinaryCode" width="16" height="16"/>
+        <image name="BlockCode" width="16" height="16"/>
+        <image name="ByteCode" width="16" height="16"/>
+        <image name="LogicalCode" width="16" height="16"/>
+        <image name="Swift" width="16" height="16"/>
+        <image name="swiftSample" width="16" height="16"/>
+    </resources>
+</document>

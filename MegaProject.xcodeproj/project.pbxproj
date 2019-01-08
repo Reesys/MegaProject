@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		CD0FC68821DFF5F60060A596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC68721DFF5F60060A596 /* AppDelegate.swift */; };
-		CD0FC68A21DFF5F70060A596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC68921DFF5F70060A596 /* ViewController.swift */; };
 		CD0FC68D21DFF5F70060A596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0FC68B21DFF5F70060A596 /* Main.storyboard */; };
 		CD0FC68F21DFF6010060A596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0FC68E21DFF6010060A596 /* Assets.xcassets */; };
-		CD0FC69221DFF6010060A596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0FC69021DFF6010060A596 /* LaunchScreen.storyboard */; };
+		CD0FC6A521DFF93C0060A596 /* CreativityCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6A421DFF93B0060A596 /* CreativityCollectionViewController.swift */; };
+		CD0FC6A721DFF9530060A596 /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6A621DFF9530060A596 /* CreativityViewController.swift */; };
+		CD0FC6A921DFF9750060A596 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6A821DFF9740060A596 /* BucketItemCell.swift */; };
+		CD0FC6AB21DFF9890060A596 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6AA21DFF9890060A596 /* DataViewController.swift */; };
+		CD0FC6AD21DFF9980060A596 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6AC21DFF9980060A596 /* AbstractionViewController.swift */; };
+		CD0FC6AF21DFF9A50060A596 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6AE21DFF9A50060A596 /* AlgorithmController.swift */; };
+		CD0FC6B121DFF9C50060A596 /* CreativityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6B021DFF9C50060A596 /* CreativityCell.swift */; };
+		CD0FC6B321DFF9D00060A596 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6B221DFF9D00060A596 /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD0FC68421DFF5F60060A596 /* MegaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0FC68721DFF5F60060A596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD0FC68921DFF5F70060A596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD0FC68C21DFF5F70060A596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD0FC68E21DFF6010060A596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CD0FC69121DFF6010060A596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD0FC69321DFF6010060A596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0FC6A421DFF93B0060A596 /* CreativityCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreativityCollectionViewController.swift; sourceTree = "<group>"; };
+		CD0FC6A621DFF9530060A596 /* CreativityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
+		CD0FC6A821DFF9740060A596 /* BucketItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		CD0FC6AA21DFF9890060A596 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		CD0FC6AC21DFF9980060A596 /* AbstractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
+		CD0FC6AE21DFF9A50060A596 /* AlgorithmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
+		CD0FC6B021DFF9C50060A596 /* CreativityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreativityCell.swift; sourceTree = "<group>"; };
+		CD0FC6B221DFF9D00060A596 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,76 @@
 		CD0FC68621DFF5F60060A596 /* MegaProject */ = {
 			isa = PBXGroup;
 			children = (
-				CD0FC68721DFF5F60060A596 /* AppDelegate.swift */,
-				CD0FC68921DFF5F70060A596 /* ViewController.swift */,
-				CD0FC68B21DFF5F70060A596 /* Main.storyboard */,
-				CD0FC68E21DFF6010060A596 /* Assets.xcassets */,
-				CD0FC69021DFF6010060A596 /* LaunchScreen.storyboard */,
-				CD0FC69321DFF6010060A596 /* Info.plist */,
+				CD0FC69921DFF62D0060A596 /* Resources */,
+				CD0FC69A21DFF79E0060A596 /* Controller */,
+				CD0FC69B21DFF7A80060A596 /* View */,
 			);
 			path = MegaProject;
+			sourceTree = "<group>";
+		};
+		CD0FC69921DFF62D0060A596 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC68721DFF5F60060A596 /* AppDelegate.swift */,
+				CD0FC68E21DFF6010060A596 /* Assets.xcassets */,
+				CD0FC69321DFF6010060A596 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD0FC69A21DFF79E0060A596 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC69F21DFF7E80060A596 /* Algorithm */,
+				CD0FC69E21DFF7DE0060A596 /* Abstraction */,
+				CD0FC69D21DFF7D80060A596 /* Creativity */,
+				CD0FC69C21DFF7D00060A596 /* Data */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD0FC69B21DFF7A80060A596 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC6B221DFF9D00060A596 /* DrawingView.swift */,
+				CD0FC6B021DFF9C50060A596 /* CreativityCell.swift */,
+				CD0FC68B21DFF5F70060A596 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD0FC69C21DFF7D00060A596 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC6AA21DFF9890060A596 /* DataViewController.swift */,
+				CD0FC6A821DFF9740060A596 /* BucketItemCell.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CD0FC69D21DFF7D80060A596 /* Creativity */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC6A621DFF9530060A596 /* CreativityViewController.swift */,
+				CD0FC6A421DFF93B0060A596 /* CreativityCollectionViewController.swift */,
+			);
+			path = Creativity;
+			sourceTree = "<group>";
+		};
+		CD0FC69E21DFF7DE0060A596 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC6AC21DFF9980060A596 /* AbstractionViewController.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		CD0FC69F21DFF7E80060A596 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FC6AE21DFF9A50060A596 /* AlgorithmController.swift */,
+			);
+			path = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0FC69221DFF6010060A596 /* LaunchScreen.storyboard in Resources */,
 				CD0FC68F21DFF6010060A596 /* Assets.xcassets in Resources */,
 				CD0FC68D21DFF5F70060A596 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0FC68A21DFF5F70060A596 /* ViewController.swift in Sources */,
+				CD0FC6AF21DFF9A50060A596 /* AlgorithmController.swift in Sources */,
+				CD0FC6A921DFF9750060A596 /* BucketItemCell.swift in Sources */,
+				CD0FC6A521DFF93C0060A596 /* CreativityCollectionViewController.swift in Sources */,
+				CD0FC6B121DFF9C50060A596 /* CreativityCell.swift in Sources */,
+				CD0FC6AB21DFF9890060A596 /* DataViewController.swift in Sources */,
+				CD0FC6AD21DFF9980060A596 /* AbstractionViewController.swift in Sources */,
+				CD0FC6B321DFF9D00060A596 /* DrawingView.swift in Sources */,
 				CD0FC68821DFF5F60060A596 /* AppDelegate.swift in Sources */,
+				CD0FC6A721DFF9530060A596 /* CreativityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +229,6 @@
 				CD0FC68C21DFF5F70060A596 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD0FC69021DFF6010060A596 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD0FC69121DFF6010060A596 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MegaProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MegaProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MegaProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MegaProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
