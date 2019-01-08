@@ -481,11 +481,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BinaryCode" width="16" height="16"/>
-        <image name="BlockCode" width="16" height="16"/>
-        <image name="ByteCode" width="16" height="16"/>
-        <image name="LogicalCode" width="16" height="16"/>
-        <image name="Swift" width="16" height="16"/>
-        <image name="swiftSample" width="16" height="16"/>
+        <image name="BinaryCode" width="416" height="277"/>
+        <image name="BlockCode" width="784" height="459"/>
+        <image name="ByteCode" width="640" height="202"/>
+        <image name="LogicalCode" width="275" height="184"/>
+        <image name="Swift" width="1206" height="426"/>
+        <image name="swiftSample" width="4992" height="4976"/>
     </resources>
 </document>

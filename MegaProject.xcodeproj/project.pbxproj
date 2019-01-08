@@ -18,6 +18,7 @@
 		CD0FC6AF21DFF9A50060A596 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6AE21DFF9A50060A596 /* AlgorithmController.swift */; };
 		CD0FC6B121DFF9C50060A596 /* CreativityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6B021DFF9C50060A596 /* CreativityCell.swift */; };
 		CD0FC6B321DFF9D00060A596 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0FC6B221DFF9D00060A596 /* DrawingView.swift */; };
+		CDBD0C0F21E535060033852F /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD0C0E21E535060033852F /* BucketItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CD0FC6AE21DFF9A50060A596 /* AlgorithmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
 		CD0FC6B021DFF9C50060A596 /* CreativityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreativityCell.swift; sourceTree = "<group>"; };
 		CD0FC6B221DFF9D00060A596 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		CDBD0C0E21E535060033852F /* BucketItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		CD0FC68621DFF5F60060A596 /* MegaProject */ = {
 			isa = PBXGroup;
 			children = (
+				CDBD0C0D21E534F30033852F /* Model */,
 				CD0FC69921DFF62D0060A596 /* Resources */,
 				CD0FC69A21DFF79E0060A596 /* Controller */,
 				CD0FC69B21DFF7A80060A596 /* View */,
@@ -136,6 +139,14 @@
 				CD0FC6AE21DFF9A50060A596 /* AlgorithmController.swift */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		CDBD0C0D21E534F30033852F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD0C0E21E535060033852F /* BucketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				CD0FC6AD21DFF9980060A596 /* AbstractionViewController.swift in Sources */,
 				CD0FC6B321DFF9D00060A596 /* DrawingView.swift in Sources */,
 				CD0FC68821DFF5F60060A596 /* AppDelegate.swift in Sources */,
+				CDBD0C0F21E535060033852F /* BucketItem.swift in Sources */,
 				CD0FC6A721DFF9530060A596 /* CreativityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
